@@ -8,11 +8,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    background-image: url(assets/1311796.png);
+    background-image: url(assets/hatsune-miku-3840x2160-22725.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    
+    font-family: 'Inter', sans-serif;
 }
 
 header.cabecalho {
@@ -21,22 +23,35 @@ header.cabecalho {
     align-items: center;
     flex-flow: column;
     padding: 20px;
-        background-color: rgba(0, 0, 0, 0.536);
+        background-color: rgba(5, 0, 0, 0.375);
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.301);
 }
 
 header.cabecalho>a{
     color: rgb(186, 30, 30);
 }
-
+/*coloque botoes bolha flutuantes no nav estilo apple*/
 nav.menu>ul {
     display: flex;
     gap: 30px;
 }
 
 nav.menu>ul>li>a{
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
+}
+
+.material-symbols-outlined {
+    border: 01px solid;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 1px 1px white;
+}
+
+.material-symbols-outlined:hover {
+    box-shadow: 1px 1px 1px;
+    background-color: rgba(255, 255, 255, 0.201);
+    transition: 500ms;
 }
 
 @media  (max-width: 600px) {
@@ -63,8 +78,13 @@ main>section.portfolio {
     padding: 30px;
     margin-top: 50px;
     margin: 50px auto 0 auto;
-        background-color: rgba(251, 251, 251, 0.254);
+    border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.866);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.301);
+
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         
 }
 
@@ -73,8 +93,12 @@ div.foto {
     height: clamp(200px, 40vw, 300px);
     border-radius: 50%;
     flex-shrink: 0;
-        border: 1px solid black;
-        box-shadow: 10px 10px 3px;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.092);
+        background-image: url(assets/WhatsApp\ Image\ 2026-09-24\ at\ 12.34.44.jpe);
+        background-position: center;
+        background-size: 300px;
+        background-repeat: no-repeat;
 }
 
 section.habilidades {
