@@ -210,15 +210,45 @@ main>section.portfolio {
 
 
 div.foto>img {
+    margin: 0 auto;
+    display: flex;
     width: clamp(130px, 40vw, 300px);
     height: clamp(130px, 40vw, 300px);
     border-radius: 50%;
     flex-shrink: 0;
-        border: 2px solid rgb(255, 255, 255);
+        border: 3px solid rgb(255, 255, 255);
         box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.092);
         background-position: center;
         background-size: 300px;
         background-repeat: no-repeat;
+
+        object-fit: cover;
+        object-position: center;
+}
+
+div.social {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 25px;
+
+    margin-top: 15px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.228);
+
+    .fa-youtube{ color: rgb(252, 2, 2); }
+    .fa-linkedin{color: rgb(0, 102, 255);}
+    .fa-github{color: rgb(0, 0, 0);}
+    .fa-instagram{color: rgb(235, 0, 165);}
+
+    .fa-brands{ 
+        
+        transition: 0.6s ease-in-out;
+     }
+
+    .fa-brands:hover{transform: translateY(-2px);}
 }
 
 section.habilidades {
